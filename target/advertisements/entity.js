@@ -33,7 +33,6 @@ __decorate([
     __metadata("design:type", String)
 ], Advertisement.prototype, "description", void 0);
 __decorate([
-    class_validator_1.IsNumber(),
     typeorm_1.Column('integer'),
     __metadata("design:type", String)
 ], Advertisement.prototype, "price", void 0);

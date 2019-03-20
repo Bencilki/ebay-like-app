@@ -1,6 +1,6 @@
 import { Entity, PrimaryGeneratedColumn, Column } from 'typeorm'
 import { BaseEntity } from 'typeorm/repository/BaseEntity'
-import { IsString, Length, MinLength, IsNumber } from 'class-validator'
+import { IsString, Length, MinLength } from 'class-validator'
 import { Url } from 'url';
 
 @Entity()
@@ -21,7 +21,7 @@ export default class Advertisement extends BaseEntity {
   @Column('text')
   description: string
 
-  @IsNumber()
+//   @IsNumber()
   @Column('integer')
   price: String
 
