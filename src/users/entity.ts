@@ -24,14 +24,14 @@ export default class User extends BaseEntity {
   email: string
 
   @IsString()
-  @MinLength(8)
+  @MinLength(2)
   @Column('text', {nullable:false})
 //   @Exclude({toPlainOnly:true})
   password: string
 
 //   @IsMobilePhone()
   @MinLength(1)
-  @Column('number')
+  @Column('integer')
   phone: Number
 
 }

@@ -23,7 +23,7 @@ export default class Advertisement extends BaseEntity {
 
 //   @IsNumber()
   @Column('integer')
-  price: String
+  price: number
 
 //   @IsUrl()
   @Column('text', {nullable:true})

@@ -37,13 +37,13 @@ __decorate([
 ], User.prototype, "email", void 0);
 __decorate([
     class_validator_1.IsString(),
-    class_validator_1.MinLength(8),
+    class_validator_1.MinLength(2),
     typeorm_1.Column('text', { nullable: false }),
     __metadata("design:type", String)
 ], User.prototype, "password", void 0);
 __decorate([
     class_validator_1.MinLength(1),
-    typeorm_1.Column('number'),
+    typeorm_1.Column('integer'),
     __metadata("design:type", Number)
 ], User.prototype, "phone", void 0);
 User = __decorate([

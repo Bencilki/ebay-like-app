@@ -34,7 +34,7 @@ __decorate([
 ], Advertisement.prototype, "description", void 0);
 __decorate([
     typeorm_1.Column('integer'),
-    __metadata("design:type", String)
+    __metadata("design:type", Number)
 ], Advertisement.prototype, "price", void 0);
 __decorate([
     typeorm_1.Column('text', { nullable: true }),
