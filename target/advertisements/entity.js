@@ -20,13 +20,13 @@ __decorate([
 ], Advertisement.prototype, "id", void 0);
 __decorate([
     class_validator_1.IsString(),
-    class_validator_1.Length(5, 15),
+    class_validator_1.Length(2, 15),
     typeorm_1.Column('text'),
     __metadata("design:type", String)
 ], Advertisement.prototype, "title", void 0);
 __decorate([
     class_validator_1.IsString(),
-    class_validator_1.MinLength(10, {
+    class_validator_1.MinLength(5, {
         message: "Description is too short"
     }),
     typeorm_1.Column('text'),
@@ -34,12 +34,11 @@ __decorate([
 ], Advertisement.prototype, "description", void 0);
 __decorate([
     class_validator_1.IsNumber(),
-    typeorm_1.Column('money'),
-    __metadata("design:type", Number)
+    typeorm_1.Column('integer'),
+    __metadata("design:type", String)
 ], Advertisement.prototype, "price", void 0);
 __decorate([
-    class_validator_1.IsUrl(),
-    typeorm_1.Column('text'),
+    typeorm_1.Column('text', { nullable: true }),
     __metadata("design:type", Object)
 ], Advertisement.prototype, "picture", void 0);
 Advertisement = __decorate([
